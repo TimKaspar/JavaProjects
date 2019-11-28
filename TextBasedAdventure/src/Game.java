@@ -4,8 +4,6 @@ public class Game {
 
     public static void main(String[] args) {
 
-        System.out.println("test");
-
         Scanner scanner = new Scanner(System.in);
         List<Player> players = new LinkedList();
         Map<Integer, String> playerNames = Player.inputPlayerNames();

@@ -12,6 +12,5 @@ public class AnzahlWoerter {
 
         }
         System.out.println("Die Engabe entählt " + (leerschlaege + 1) + " wörter");
-        //sike
     }
 }

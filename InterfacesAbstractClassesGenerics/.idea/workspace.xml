@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10d37a97-e366-4341-a1ba-abcbfc2e6c04" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="InterfacesAbstractClassesGenerics" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="UML Class" />
+        <option value="Tag Library Descriptor" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WTm2u2vSbBPNb8xr847xbNxEK6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ClassDiagramms" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kti\IdeaProjects\InterfacesAbstractClassesGenerics\ClassDiagramms" />
+      <recent name="C:\Users\kti\IdeaProjects\InterfacesAbstractClassesGenerics\Zoo" />
+      <recent name="C:\Users\kti\IdeaProjects\InterfacesAbstractClassesGenerics" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle --quiet" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.C:/Users/kti/IdeaProjects/InterfacesAbstractClassesGenerics">
+    <configuration name="Tiere" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tiere" />
+      <module name="InterfacesAbstractClassesGenerics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/kti/IdeaProjects/InterfacesAbstractClassesGenerics" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--quiet" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.C:/Users/kti/IdeaProjects/InterfacesAbstractClassesGenerics" />
+        <item itemvalue="Application.Tiere" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10d37a97-e366-4341-a1ba-abcbfc2e6c04" name="Default Changelist" comment="" />
+      <created>1579181754583</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579181754583</updated>
+      <workItem from="1579181762355" duration="5287000" />
+      <workItem from="1579245273868" duration="11909000" />
+      <workItem from="1579677724678" duration="32833000" />
+      <workItem from="1579855049827" duration="887000" />
+      <workItem from="1579856207032" duration="9711000" />
+      <workItem from="1580280657760" duration="4512000" />
+      <workItem from="1580293213857" duration="8129000" />
+      <workItem from="1580381754584" duration="165000" />
+      <workItem from="1580381946456" duration="84000" />
+      <workItem from="1580382041720" duration="14262000" />
+      <workItem from="1580746192647" duration="293000" />
+      <workItem from="1580746495600" duration="1020000" />
+      <workItem from="1580894478661" duration="965000" />
+      <workItem from="1580896317849" duration="756000" />
+      <workItem from="1580901567813" duration="1389000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1032" y="246" key="#Plugins" timestamp="1580746484970">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1032" y="246" key="#Plugins/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580746484970" />
+    <state x="780" y="198" key="#Project_Structure" timestamp="1579773048678">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="780" y="198" key="#Project_Structure/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579773048678" />
+    <state x="299" y="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580901857984">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="299" y="387" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901857984" />
+    <state x="1079" y="268" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1580746555938">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1079" y="268" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580746555938" />
+    <state x="765" y="290" key="#com.intellij.ide.util.MemberChooser" timestamp="1580284423639">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="765" y="290" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580284423639" />
+    <state x="1120" y="316" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580381915928">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1120" y="316" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580381915928" />
+    <state x="272" y="469" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579783460573">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="272" y="469" width="408" height="237" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579783460573" />
+    <state x="690" y="328" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579693672197">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="690" y="328" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579693672197" />
+    <state x="305" y="326" key="FileChooserDialogImpl" timestamp="1579772956746">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="305" y="326" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579772956746" />
+    <state width="1921" height="226" key="GridCell.Tab.0.bottom" timestamp="1580901602901">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1921" height="226" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
+    <state width="1921" height="226" key="GridCell.Tab.0.center" timestamp="1580901602901">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1921" height="226" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
+    <state width="1921" height="226" key="GridCell.Tab.0.left" timestamp="1580901602901">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1921" height="226" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
+    <state width="1921" height="226" key="GridCell.Tab.0.right" timestamp="1580901602901">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state width="1921" height="226" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
+    <state x="806" y="310" key="SettingsEditor" timestamp="1580896330733">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="806" y="310" key="SettingsEditor/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580896330733" />
+    <state x="100" y="100" width="774" height="960" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1579860347135">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="100" y="100" width="774" height="960" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579860347135" />
+    <state x="-1939" y="3" width="1477" height="916" key="dock-window-1" timestamp="1580800492842">
+      <screen x="-1920" y="0" width="1536" height="832" />
+    </state>
+    <state x="-1939" y="3" width="1477" height="916" key="dock-window-1/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580800492842" />
+    <state x="685" y="156" key="new project wizard" timestamp="1580902954968">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="685" y="156" key="new project wizard/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580902954968" />
+    <state x="1213" y="252" width="672" height="677" key="run.anything.popup" timestamp="1580896417391">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1213" y="252" width="672" height="677" key="run.anything.popup/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580896417391" />
+    <state x="1013" y="248" width="672" height="678" key="search.everywhere.popup" timestamp="1580896406599">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="1013" y="248" width="672" height="678" key="search.everywhere.popup/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580896406599" />
+  </component>
+</project>

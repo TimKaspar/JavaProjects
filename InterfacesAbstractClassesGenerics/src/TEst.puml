@@ -1,0 +1,61 @@
+@startuml
+
+package "Zoo" <<Frame>> {
+
+
+
+    interface Organism {
+    }
+
+    interface Animal{
+    }
+    interface Plant{
+    }
+    interface Meat{
+    }
+
+    interface Carnivore{
+    +void eat(Meat meat)
+    }
+    interface Herbivore{
+    +void eat(Plant plant)
+    }
+    interface Omnivore{
+    }
+
+    interface Talking{
+    void talk(Word word)
+    }
+
+    class Giraff{
+    }
+    class Cow{
+    }
+    class Lion{
+    }
+    class Raven{
+    }
+    class Bee{
+    }
+
+    Plant ..> Organism
+    Animal ..> Organism
+    Animal ..> Meat
+    Omnivore ..> Herbivore
+    Omnivore ..> Carnivore
+    Giraff --> Animal
+    Giraff --> Herbivore
+    Cow --> Animal
+    Cow --> Herbivore
+    Bee --> Animal
+    Bee --> Herbivore
+    Lion --> Animal
+    Lion --> Carnivore
+    Lion --> Talking
+    Raven --> Animal
+    Raven --> Carnivore
+    Raven --> Talking
+
+}
+
+@enduml

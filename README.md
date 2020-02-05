@@ -3,4 +3,4 @@
 - Betrieb
 - Ergon Kurs
 
-by *Tim*
+*by Tim*

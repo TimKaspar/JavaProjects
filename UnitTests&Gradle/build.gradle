@@ -1,0 +1,23 @@
+defaultTasks 'clean', 'build'
+
+apply plugin: 'java'
+
+description = 'Example Java Project'
+group = 'org.example'
+version = '1.0.0-SNAPSHOT'
+
+repositories {
+    jcenter()
+}
+
+jar { duplicatesStrategy = 'exclude' }
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    testCompile"junit:junit:4.12"
+}
+

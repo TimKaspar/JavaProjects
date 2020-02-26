@@ -1,12 +1,17 @@
 import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
 
 public class CreateWriteFile {
     public static void main(String[] args) throws IOException {
 
-        PrintWriter writer = new PrintWriter("test-file.txt", "UTF-8");
-        writer.println("The first line");
-        writer.println("The second line");
-        writer.close();
+        List<String> lines = Arrays.asList("The first line", "The second line");
+        Path file = Paths.get("test.txt");
+        Files.write(file, lines, StandardCharsets.UTF_8);
 
     }
 }

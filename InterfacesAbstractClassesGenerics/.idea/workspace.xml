@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10d37a97-e366-4341-a1ba-abcbfc2e6c04" name="Default Changelist" comment="" />
+    <list default="true" id="10d37a97-e366-4341-a1ba-abcbfc2e6c04" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="InterfacesAbstractClassesGenerics" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,10 +22,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1WTm2u2vSbBPNb8xr847xbNxEK6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -32,7 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ClassDiagramms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -87,18 +91,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -124,11 +116,17 @@
       <workItem from="1580894478661" duration="965000" />
       <workItem from="1580896317849" duration="756000" />
       <workItem from="1580901567813" duration="1389000" />
+      <workItem from="1586418746396" duration="1503000" />
+      <workItem from="1586424785288" duration="658000" />
+      <workItem from="1586434332406" duration="2351000" />
+      <workItem from="1586844676023" duration="2194000" />
+      <workItem from="1586851927919" duration="1201000" />
+      <workItem from="1586939776332" duration="509000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1032" y="246" key="#Plugins" timestamp="1580746484970">
@@ -163,26 +161,31 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="690" y="328" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579693672197" />
-    <state x="305" y="326" key="FileChooserDialogImpl" timestamp="1579772956746">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="1247" y="37" key="FileChooserDialogImpl" timestamp="1586432336137">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="305" y="326" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1579772956746" />
-    <state width="1921" height="226" key="GridCell.Tab.0.bottom" timestamp="1580901602901">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="1247" y="37" key="FileChooserDialogImpl/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586432336137" />
+    <state width="2198" height="266" key="GridCell.Tab.0.bottom" timestamp="1586421855247">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1921" height="226" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
-    <state width="1921" height="226" key="GridCell.Tab.0.center" timestamp="1580901602901">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="2198" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586421855247" />
+    <state width="2198" height="266" key="GridCell.Tab.0.center" timestamp="1586421855247">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1921" height="226" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
-    <state width="1921" height="226" key="GridCell.Tab.0.left" timestamp="1580901602901">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="2198" height="266" key="GridCell.Tab.0.center/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586421855247" />
+    <state width="2198" height="266" key="GridCell.Tab.0.left" timestamp="1586421855246">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1921" height="226" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
-    <state width="1921" height="226" key="GridCell.Tab.0.right" timestamp="1580901602901">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state width="2198" height="266" key="GridCell.Tab.0.left/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586421855246" />
+    <state width="2198" height="266" key="GridCell.Tab.0.right" timestamp="1586421855247">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1921" height="226" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580901602901" />
+    <state width="2198" height="266" key="GridCell.Tab.0.right/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586421855247" />
     <state x="806" y="310" key="SettingsEditor" timestamp="1580896330733">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -195,10 +198,11 @@
       <screen x="-1920" y="0" width="1536" height="832" />
     </state>
     <state x="-1939" y="3" width="1477" height="916" key="dock-window-1/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580800492842" />
-    <state x="685" y="156" key="new project wizard" timestamp="1580902954968">
-      <screen x="0" y="0" width="1920" height="1160" />
+    <state x="913" y="140" key="new project wizard" timestamp="1586940287977">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="685" y="156" key="new project wizard/-1920.0.1536.832/0.0.1920.1160@0.0.1920.1160" timestamp="1580902954968" />
+    <state x="913" y="140" key="new project wizard/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586940287977" />
     <state x="1213" y="252" width="672" height="677" key="run.anything.popup" timestamp="1580896417391">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

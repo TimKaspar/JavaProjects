@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.190s</div>
+<div class="counter">0.384s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,54 +61,47 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard error</a>
+<a href="#tab1">Tests</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-<tr>
-<td class="success">hasContent</td>
-<td class="success">0.190s</td>
-<td class="success">passed</td>
-</tr>
-</table>
-</div>
-<div id="tab1" class="tab">
-<h2>Standard error</h2>
+<h2>Failed tests</h2>
+<div class="test">
+<a name="hasContent"></a>
+<h3 class="failures">hasContent</h3>
 <span class="code">
-<pre>org.h2.jdbc.JdbcSQLSyntaxErrorException: Table &quot;PERSON&quot; not found; SQL statement:
-select * from person [42102-199]
+<pre>org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement &quot;CREATE TABLE PERSON (
+ ID INT NOT NULL AUTO_INCREMENT,([*]
+ FIRSTNAME VARCHAR(64) NOT NULL, (
+ LASTNAME VARCHAR(64) NOT NULL, (
+ BIRTHDATE DATE, (
+ PRIMARY KEY (ID)) &quot;; expected &quot;identifier&quot;; SQL statement:
+create table person (
+ id int not null auto_increment,(
+ firstname VARCHAR(64) not null, (
+ lastname VARCHAR(64) not null, (
+ birthdate date, (
+ primary key (id)) [42001-199]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
-	at org.h2.message.DbException.get(DbException.java:205)
-	at org.h2.message.DbException.get(DbException.java:181)
-	at org.h2.command.Parser.readTableOrView(Parser.java:7146)
-	at org.h2.command.Parser.readTableFilter(Parser.java:1895)
-	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:2641)
-	at org.h2.command.Parser.parseSelectSimple(Parser.java:2788)
-	at org.h2.command.Parser.parseSelectSub(Parser.java:2636)
-	at org.h2.command.Parser.parseSelectUnion(Parser.java:2469)
-	at org.h2.command.Parser.parseSelect(Parser.java:2440)
-	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:243)
+	at org.h2.command.Parser.readColumnIdentifier(Parser.java:4530)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:7927)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:7832)
+	at org.h2.command.Parser.parseCreate(Parser.java:5818)
+	at org.h2.command.Parser.parsePrepared(Parser.java:846)
 	at org.h2.command.Parser.parse(Parser.java:788)
 	at org.h2.command.Parser.parse(Parser.java:760)
 	at org.h2.command.Parser.prepareCommand(Parser.java:683)
 	at org.h2.engine.Session.prepareLocal(Session.java:627)
 	at org.h2.engine.Session.prepareCommand(Session.java:565)
 	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1292)
-	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:78)
-	at PersonDAOTest.hasContent(PersonDAOTest.java:19)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at PersonDAOTest.setup(PersonDAOTest.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,7 +109,7 @@ select * from person [42102-199]
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
@@ -160,6 +153,24 @@ select * from person [42102-199]
 </span>
 </div>
 </div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">hasContent</td>
+<td class="failures">0.384s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
 <div id="footer">
 <p>
 <div>
@@ -167,7 +178,7 @@ select * from person [42102-199]
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.1</a> at Apr 21, 2020, 7:48:00 AM</p>
+<a href="http://www.gradle.org">Gradle 6.1</a> at Apr 21, 2020, 11:47:10 AM</p>
 </div>
 </div>
 </body>

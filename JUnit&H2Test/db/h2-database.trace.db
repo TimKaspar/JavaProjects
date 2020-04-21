@@ -1,3 +1,27 @@
 2020-04-21 07:48:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PERSON" not found; SQL statement:
 select * from person [42102-199]
+2020-04-21 11:44:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PERSON (
+ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,([*]
+FIRSTNAME VARCHAR(64) NOT NULL, (
+LASTNAME VARCHAR(64) NOT NULL, (
+BIRTHDATE DATE "; expected "identifier"; SQL statement:
+create table person (
+id int not null auto_increment primary key,(
+firstname VARCHAR(64) not null, (
+lastname VARCHAR(64) not null, (
+birthdate date [42001-199]
+2020-04-21 11:47:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE PERSON (
+ ID INT NOT NULL AUTO_INCREMENT,([*]
+ FIRSTNAME VARCHAR(64) NOT NULL, (
+ LASTNAME VARCHAR(64) NOT NULL, (
+ BIRTHDATE DATE, (
+ PRIMARY KEY (ID)) "; expected "identifier"; SQL statement:
+create table person (
+ id int not null auto_increment,(
+ firstname VARCHAR(64) not null, (
+ lastname VARCHAR(64) not null, (
+ birthdate date, (
+ primary key (id)) [42001-199]

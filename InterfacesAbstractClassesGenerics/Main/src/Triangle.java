@@ -13,4 +13,9 @@ public class Triangle extends Shape {
     public double getArea() {
         return 45.5;
     }
+
+    @Override
+    public Box getBoundingBox() {
+        return null;
+    }
 }

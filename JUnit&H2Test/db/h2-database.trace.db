@@ -1,0 +1,3 @@
+2020-04-21 07:48:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PERSON" not found; SQL statement:
+select * from person [42102-199]

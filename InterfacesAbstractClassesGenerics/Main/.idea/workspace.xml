@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd55fa0e-7962-44db-baed-972cce4b1989" name="Default Changelist" comment="" />
+    <list default="true" id="cd55fa0e-7962-44db-baed-972cce4b1989" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JDBC/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../JDBC/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -22,14 +33,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JDBC" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,25 +75,27 @@
       <option name="presentableId" value="Default" />
       <updated>1586432349451</updated>
       <workItem from="1586432352459" duration="8177000" />
+      <workItem from="1587025069858" duration="9245000" />
+      <workItem from="1587105202720" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="958" y="192" key="#Project_Structure" timestamp="1586432357204">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="958" y="192" key="#Project_Structure/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586432357204" />
-    <state x="1171" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1586435327818">
+    <state x="1171" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1587031594419">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1171" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586435327818" />
-    <state x="1060" y="274" key="FileChooserDialogImpl" timestamp="1586434328893">
+    <state x="1171" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1587031594419" />
+    <state x="1060" y="274" key="FileChooserDialogImpl" timestamp="1587105237164">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1060" y="274" key="FileChooserDialogImpl/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1586434328893" />
+    <state x="1060" y="274" key="FileChooserDialogImpl/0.0.2560.1040/-1920.9.1920.1040@0.0.2560.1040" timestamp="1587105237164" />
     <state width="2483" height="347" key="GridCell.Tab.0.bottom" timestamp="1586442292392">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

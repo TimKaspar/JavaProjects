@@ -1,9 +1,9 @@
-public class Circle extends Shape {
+public class Circle extends Shape{
 
-    public Circle(){
-        this.kind = getKind();
-        this.circumference = getCircumference();
-        this.area = getArea();
+    double radius;
+
+    public Circle(double radius){
+        this.radius = radius;
     }
     @Override
     public String getKind() {
@@ -12,11 +12,19 @@ public class Circle extends Shape {
 
     @Override
     public double getCircumference() {
-        return 2.3;
+        return radius*2*3.141;
     }
 
     @Override
     public double getArea() {
-        return 3.4;
+        return radius*radius*3.141;
     }
+
+    @Override
+    public Box getBoundingBox() {
+        Box box = new Box(getX()-radius,)
+        return box;
+    }
+
+
 }

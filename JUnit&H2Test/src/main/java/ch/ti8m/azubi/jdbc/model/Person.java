@@ -1,10 +1,7 @@
 package ch.ti8m.azubi.jdbc.model;
 
 import java.sql.Date;
-<<<<<<< HEAD
 import java.time.LocalDate;
-=======
->>>>>>> cff5ea189c5f419376637abcfd81afb0bf3b4ba0
 import java.util.Objects;
 
 public class Person {
@@ -12,21 +9,13 @@ public class Person {
     private Integer id;
     private String firstName;
     private String lastName;
-<<<<<<< HEAD
     private LocalDate birthDate;
-=======
-    private Date birthDate;
->>>>>>> cff5ea189c5f419376637abcfd81afb0bf3b4ba0
 
     public Person() {
 
     }
 
-<<<<<<< HEAD
     public Person(String firstName, String lastName, LocalDate birthDate) {
-=======
-    public Person(String firstName, String lastName, Date birthDate) {
->>>>>>> cff5ea189c5f419376637abcfd81afb0bf3b4ba0
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDate = birthDate;
@@ -56,19 +45,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-<<<<<<< HEAD
     public LocalDate getBirthDate() {
         return birthDate;
     }
 
     public void setBirthDate(LocalDate birthDate) {
-=======
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
->>>>>>> cff5ea189c5f419376637abcfd81afb0bf3b4ba0
         this.birthDate = birthDate;
     }
 

@@ -1,0 +1,3 @@
+127.0.0.1 - - [24/Jul/2020:08:25:56 +0200] "GET /cargocpc/index.html HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:08:28:24 +0200] "GET /pizzashop/pizza? HTTP/1.1" 200 4532
+0:0:0:0:0:0:0:1 - - [24/Jul/2020:08:35:34 +0200] "GET /pizzashop/confirmation?amount=1&amount=1&amount=1&amount=1&amount=1&amount=1&address=&tel= HTTP/1.1" 200 1304

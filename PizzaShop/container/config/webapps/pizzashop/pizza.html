@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+    <link rel="stylesheet" type="text/css" href="../resources/templates/PizzaCSS.css">
+</head>
+<body>
+<div class="grid">
+    <h1>Pizza Shop</h1>
+    <div class="grid-item-shoppingcart">
+        <ul class="cart-wrapper">
+            <li class="cart-header"> Wahrenkorb</li>
+        <li class="cart-item">
+            <label for="amount">
+                <li class="cart-item-discription">SSSSSSSSSSS</li>
+            <li class="cart-item-menu">
+                <input type="number" id="amount" name="amount" min="0" max="50" value="1">
+            </li>
+        </li>
+        <li class="cart-checkout">
+            <form action="order.html">
+                <button class="button" type="submit"><span>Weiter</span></button>
+            </form>
+        </li>
+        </ul>
+    </div>
+    <div class="flex-container">
+        <button class="flex-item" id="flex-item1">Prosciutto</button>
+        <button class="flex-item" id="flex-item2">Hawaii</button>
+        <button class="flex-item" id="flex-item3">Margherita</button>
+        <button class="flex-item" id="flex-item4">Prosciutto et Funghi</button>
+        <button class="flex-item" id="flex-item5">Tonno</button>
+        <button class="flex-item" id="flex-item6">Salami</button>
+    </div>
+</div>
+</body>
+</html>

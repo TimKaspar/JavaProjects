@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>Pizza</title>
-    <link rel="stylesheet" type="text/css" href="PizzaCSS.css">
+    <link rel="stylesheet" type="text/css" href="Pizza.css">
+    <script src="Pizza.js"></script>
 </head>
 <body>
 <#-- Grid wrapper for whole Page -->
 <div class="grid">
-    <#assign itemCounter = 0>
     <#-- all idividual values from flex-items (Pizza Selection)-->
     <#assign itemCounts = [32,16,8,4,2,1]>
     <#assign flexItems = ["flex-item1","flex-item2","flex-item3","flex-item4","flex-item5","flex-item6"]>
-    <#assign ingredints = ["Schinken, Ruccola, Tomaten, Mozorella","Schinken, Ananas, Tomaten, Mozorella", "Tomaten, Mozorella, Basilikum","Schinken, Champignon, Tomaten, Mozorella","Ton, Zwiebeln, Tomaten, Mozorella","Salami, Tomaten, Mozorella"]>
+    <#assign ingredints = ["Schinken, Ruccola, Tomaten, Mozorella","Schinken, Ananas, Tomaten, Mozorella", "Tomaten, Mozorella, Basilikum","Schinken, Champignon, Tomaten, Mozorella","Ton, Zwiebeln, &nbsp Tomaten, Mozorella","Salami, Tomaten, Mozorella"]>
 
     <#-- Title-->
     <h1>Pizza Shop</h1>
@@ -20,41 +20,38 @@
     <#-- Pizza Selection -->
     <div class="flex-container">
         <#list itemCounts as itemCount>
-            <form action="<#assign itemCounter += itemCount>">
-                <button class="hvr-sweep-to-top flex-item" id="${flexItems[itemCount_index]}">
-                    <span class="pizzaName">${pizzas[itemCount_index].name}</span>
-                    <span class="ingredients">Zutaten</span>
-                    <p><span class="ingredients" id="pizzaInfoContent">${ingredints[itemCount_index]}</span></p>
-                </button>
-            </form>
+            <button onclick="addAmount('${pizzas[itemCount_index].name}')" class="hvr-sweep-to-top flex-item"
+                    id="${flexItems[itemCount_index]}">
+                <span class="pizzaName">${pizzas[itemCount_index].name}</span>
+                <span class="ingredients">Zutaten</span>
+                <p><span class="ingredients" id="pizzaInfoContent">${ingredints[itemCount_index]}</span></p>
+            </button>
         </#list>
     </div>
 
-    <#-- functions -->
-    <#macro cartItem pizzaName>
-        <p>
-            <label for="amount">${pizzaName}</label>
-            <input type="number" id="amount" name="amount" min="0" max="50" value="1">
-        </p>
+    <#macro loadCart>
+        <#list pizzas as pizza>
+            <p>
+                <label for="${pizza.name}">${pizza.name}</label>
+                <input type="number" id="${pizza.name}" name="${pizza.id}-Amount" min="0" max="50">
+            </p>
+        </#list>
     </#macro>
     <#macro loadCart>
-    <#-- all possible outcomes of itemCounter: [1,2,3,4,5,6,8,9,10,12,16,17,18,20,24,32,33,36,40,48]-->
-    <#-- all idividual values from flex-items (Pizza Selection)-->
-        <#assign itemCounts = [32,16,8,4,2,1]>
-    <#-- loop to cycle which Pizzas where clicked on (itemCounter value)-->
-        <#list itemCounts as itemCount>
-            <#if itemCounter / itemCount gt 1 || itemCounter / itemCount == 1>
-                <#assign itemCounter = itemCounter% itemCount>
-                <@cartItem pizzas[itemCount?index].name/>
-            </#if>
+        <#list pizzas as pizza>
+            <p>
+                <label for="${pizza.name}">${pizza.name}</label>
+                <input type="number" id="${pizza.name}" name="${pizza.id}-Amount" min="0" max="50">
+            </p>
         </#list>
     </#macro>
 
     <#-- Shopping Cart -->
     <div class="grid-item-shoppingcart">
         <ul class="cart-wrapper">
-            <li class="cart-header"> Wahrenkorb</li>
-            <form action="confirmation" class="form">
+            <li class="cart-header"> Warenkorb</li>
+
+            <form action="pizza" class="form" method="post">
                 <li class="cart-checkout">
                     <@loadCart/>
                     <br>
@@ -68,10 +65,33 @@
                     </p>
                     <button class="button" type="submit"><span class="nextButton">Bestellen</span></button>
             </form>
+
             </li>
         </ul>
     </div>
-
 </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+</head>
+<body>
+<#--macro is similar to a function-->
+<#macro createForm>
+    <form>
+        <label for="checkbox">Do you like this Number</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+    </form>
+</#macro>
+<#--foreach loop over the intList sent by the Servlet-->
+<#list intList as int>
+    <h3>${int}</h3>
+    <@createForm/>
+</#list>
 </body>
 </html>

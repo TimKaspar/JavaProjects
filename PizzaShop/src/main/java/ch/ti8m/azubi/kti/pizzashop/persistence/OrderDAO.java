@@ -1,13 +1,18 @@
 package ch.ti8m.azubi.kti.pizzashop.persistence;
 
 import ch.ti8m.azubi.kti.pizzashop.dto.Order;
+import ch.ti8m.azubi.kti.pizzashop.dto.Pizza;
 import ch.ti8m.azubi.kti.pizzashop.dto.PizzaOrdering;
+import ch.ti8m.azubi.kti.pizzashop.service.PizzaService;
+import ch.ti8m.azubi.kti.pizzashop.service.PizzaServiceImpl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -43,13 +48,31 @@ public class OrderDAO {
         return null;
     }
 
+    public List<PizzaOrdering> getPizzaOrderings(Order order) throws Exception {
+        PreparedStatement statement = connection.prepareStatement("select pizza_id, amount from pizzaordering where ordering_id =" + order.getId());
+        ResultSet resultSet = statement.executeQuery();
+        List<PizzaOrdering> pizzaOrderings = new LinkedList<>();
+        PizzaService pizzaService = new PizzaServiceImpl();
+        while (resultSet.next()) {
+            // pizzaOrdering found
+            Pizza pizza = pizzaService.get(resultSet.getInt("pizza_id"));
+            PizzaOrdering pizzaOrdering = new PizzaOrdering(pizza, resultSet.getInt("amount"));
+            pizzaOrderings.add(pizzaOrdering);
+        }
+        return pizzaOrderings;
+    }
+
     public Order create(Order order) throws Exception {
         validateOrder(order);
-        PreparedStatement statement = connection.prepareStatement("insert into ordering (date, phone, address, totalPrice) values (?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
-        statement.setDate(1, order.getDate());
+        PreparedStatement statement = connection.prepareStatement("insert into ordering (date, phone, address) values (?,?,?)", Statement.RETURN_GENERATED_KEYS);
+
+        Date date = order.getCurrentDate();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String currentDateTime = format.format(date);
+
+        statement.setString(1, currentDateTime);
         statement.setString(2, order.getPhone());
         statement.setString(3, order.getAddress());
-        statement.setDouble(4, order.getTotal());
         statement.executeUpdate();
         ResultSet generatedKeys = statement.getGeneratedKeys();
         generatedKeys.next();
@@ -69,7 +92,12 @@ public class OrderDAO {
         validateOrder(order);
         doesOrderExist(order);
         PreparedStatement statement = connection.prepareStatement("update ordering set date=(?),phone=(?), address=(?) where id =" + order.getId());
-        statement.setDate(1, order.getDate());
+
+        Date date = order.getCurrentDate();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String currentDateTime = format.format(date);
+
+        statement.setString(1, currentDateTime);
         statement.setString(2, order.getPhone());
         statement.setString(3, order.getAddress());
         int rowsUpdated = statement.executeUpdate();
@@ -87,7 +115,6 @@ public class OrderDAO {
             statement3.setInt(3, pizzaOrdering.getAmount());
             statement3.execute();
         }
-        order.setTotal(order.calculateTotal());
     }
 
     public boolean delete(int id) throws Exception {
@@ -97,14 +124,6 @@ public class OrderDAO {
         PreparedStatement statement2 = connection.prepareStatement("delete from ordering where id=" + id);
         int numberOfDeletedRecords = statement2.executeUpdate();
         return numberOfDeletedRecords > 0;
-    }
-
-    public void save(Order order) throws Exception {
-        if (order.getId() == null) {
-            create(order);
-        } else {
-            update(order);
-        }
     }
 
     public List<PizzaOrdering> getPizzaOrders(int id) throws Exception {

@@ -1,9 +1,9 @@
 package ch.ti8m.azubi.kti.pizzashop.service;
 
 import ch.ti8m.azubi.kti.pizzashop.dto.Order;
+import ch.ti8m.azubi.kti.pizzashop.dto.PizzaOrdering;
 import ch.ti8m.azubi.kti.pizzashop.persistence.OrderDAO;
 
-import java.sql.Connection;
 import java.util.Comparator;
 import java.util.List;
 
@@ -18,6 +18,11 @@ public class OrderServiceImpl implements OrderService {
             System.err.println("No Order with ID: " + order.getId() + " exists.");
         }
         return order;
+    }
+
+    @Override
+    public List<PizzaOrdering> getPizzaOrderings(Order order) throws Exception {
+        return orderDAO.getPizzaOrderings(order);
     }
 
     @Override

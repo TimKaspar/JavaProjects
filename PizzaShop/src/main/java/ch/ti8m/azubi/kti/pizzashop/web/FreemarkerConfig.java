@@ -21,11 +21,11 @@ public class FreemarkerConfig {
 
     public FreemarkerConfig() {
 
-        config = new Configuration();
+        config = new Configuration(new Version(2, 3, 30));
         config.setDefaultEncoding("UTF-8");
         config.setLocale(Locale.getDefault());
         config.setClassForTemplateLoading(getClass(), "/templates");
-        config.setIncompatibleImprovements(new Version(2, 3, 20));
+        config.setIncompatibleImprovements(new Version(2, 3, 30));
         config.setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
     }
 

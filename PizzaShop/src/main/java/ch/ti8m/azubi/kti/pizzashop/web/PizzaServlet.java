@@ -1,8 +1,9 @@
 package ch.ti8m.azubi.kti.pizzashop.web;
 
+import ch.ti8m.azubi.kti.pizzashop.dto.Order;
 import ch.ti8m.azubi.kti.pizzashop.dto.Pizza;
-import ch.ti8m.azubi.kti.pizzashop.service.PizzaService;
-import ch.ti8m.azubi.kti.pizzashop.service.ServiceRegistry;
+import ch.ti8m.azubi.kti.pizzashop.dto.PizzaOrdering;
+import ch.ti8m.azubi.kti.pizzashop.service.*;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -33,6 +35,11 @@ public class PizzaServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+//        set Encoding to UTF-8
+        req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+
         List<Pizza> pizzas = null;
         try {
             pizzas = pizzaService.list();
@@ -53,19 +60,43 @@ public class PizzaServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+//        set Encoding to UTF-8
+        req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html; charset=UTF-8");
+        resp.setCharacterEncoding("UTF-8");
 
-        String name = req.getParameter("name");
-        Double price = Double.parseDouble(req.getParameter("price"));
-        Pizza pizza = new Pizza();
-        pizza.setName(name);
-        pizza.setPrice(price);
+        PizzaService pizzaService = new PizzaServiceImpl();
+        OrderService orderService = new OrderServiceImpl();
+        Order order = new Order();
+        List<PizzaOrdering> pizzaOrderingList = new LinkedList<>();
         try {
-            pizzaService.create(pizza);
+            //orderService.create(order1);
+            for (Pizza pizza : pizzaService.list()) {
+                String pizzaNameAmount = pizza.getId() + "-Amount";
+                int amount = 0;
+                if (req.getParameter(pizzaNameAmount) != "") {
+                    amount = Integer.parseInt(req.getParameter(pizzaNameAmount));
+                }
+                if (amount != 0) {
+
+                    PizzaOrdering pizzaOrdering = new PizzaOrdering(pizza, amount);
+                    pizzaOrderingList.add(pizzaOrdering);
+                }
+            }
+            order.setAddress(req.getParameter("address"));
+            order.setPizzaOrder(pizzaOrderingList);
+            order.setPhone(req.getParameter("tel"));
+            order.setDate(order.getCurrentDate());
+
+            orderService.create(order);
         } catch (Exception e) {
             e.printStackTrace();
+            throw new IOException(e);
         }
-
         // send a redirect to refresh the page
-        resp.sendRedirect(req.getRequestURI());
+        resp.sendRedirect("confirmation");
     }
+
+
+
 }

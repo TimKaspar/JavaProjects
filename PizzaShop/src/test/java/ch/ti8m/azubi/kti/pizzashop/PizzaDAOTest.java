@@ -25,13 +25,12 @@ public class PizzaDAOTest {
                 statement.execute("create table ordering (" +
                         "id int not null auto_increment," +
                         "date datetime," +
-                        "phone varchar(20) not null," +
-                        "address varchar(50) not null," +
-                        "totalPrice double not null," +
+                        "phone varchar(255) not null," +
+                        "address varchar(255) not null," +
                         "primary key (id));");
                 statement.execute("create table pizza (" +
                         "id int not null auto_increment," +
-                        "name varchar(20) not null unique," +
+                        "name varchar(255) not null unique," +
                         "price double not null," +
                         "primary key (id));");
                 statement.execute("create table pizzaOrdering (" +
@@ -46,11 +45,11 @@ public class PizzaDAOTest {
                 statement.execute("insert into pizza (id, name, price) values (4, 'Prosciutto et Funghi', 16.50);");
                 statement.execute("insert into pizza (id, name, price) values (5, 'Tonno', 15.50);");
                 statement.execute("insert into pizza (id, name, price) values (6, 'Salami', 15.00);");
-                statement.execute("insert into ordering (id, date, phone, address,totalPrice) values (1, '2016-10-01 18:45'," +
-                        "    '+41 77 111 1111', 'Teststrasse 123, 8000 Zürich',33.0);");
+                statement.execute("insert into ordering (id, date, phone, address) values (1, '2016-10-01 18:45'," +
+                        "    '+41 77 111 1111', 'Teststrasse 123, 8000 Zürich');");
                 statement.execute("insert into pizzaOrdering (ordering_id, pizza_id, amount) values (1,2,1);");
-                statement.execute("insert into ordering (id, date, phone, address, totalPrice) values (2, '2016-10-01 19:07'," +
-                        "    '+41 77 222 2222', 'Anderestrasse 45, 8400 Winterthur',56.0);");
+                statement.execute("insert into ordering (id, date, phone, address) values (2, '2016-10-01 19:07'," +
+                        "    '+41 77 222 2222', 'Anderestrasse 45, 8400 Winterthur');");
                 statement.execute("insert into pizzaOrdering (ordering_id, pizza_id, amount) values (2,1,1);");
                 statement.execute("insert into pizzaOrdering (ordering_id, pizza_id, amount) values (2,3,3);");
             }

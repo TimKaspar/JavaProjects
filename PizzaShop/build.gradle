@@ -55,13 +55,13 @@ ext.libs = [
                 'ch.qos.logback:logback-classic:1.1.8'
         ],
         json             : [
-                'com.fasterxml.jackson.core:jackson-annotations:2.9.6',
-                'com.fasterxml.jackson.core:jackson-databind:2.9.6',
-                'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.6'
+                'com.fasterxml.jackson.core:jackson-annotations:2.11.2',
+                'com.fasterxml.jackson.core:jackson-databind:2.11.2',
+                'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.2'
 
         ],
         freemarker       : [
-                'org.freemarker:freemarker:2.3.23'
+                'org.freemarker:freemarker:2.3.30'
         ],
         cargo            : [
                 'org.codehaus.cargo:cargo-core-uberjar:1.7.12',
@@ -120,6 +120,7 @@ cargo {
 
     local {
         configHomeDir = confDir
+//        jvmArgs = "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 
         installer {
             installConfiguration = configurations.tomcat

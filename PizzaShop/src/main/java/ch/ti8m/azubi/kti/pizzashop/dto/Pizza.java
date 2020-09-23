@@ -1,5 +1,8 @@
 package ch.ti8m.azubi.kti.pizzashop.dto;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Objects;
 
 public class Pizza {
@@ -11,12 +14,10 @@ public class Pizza {
     public Pizza() {
 
     }
-
     public Pizza(String name, Double price){
         this.name = name;
         this.price = price;
     }
-
     public Pizza(Integer id,String name, Double price){
         this.id = id;
         this.name = name;

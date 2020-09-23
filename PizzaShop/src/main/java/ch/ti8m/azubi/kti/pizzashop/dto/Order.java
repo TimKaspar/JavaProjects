@@ -1,5 +1,7 @@
 package ch.ti8m.azubi.kti.pizzashop.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -16,7 +18,7 @@ public class Order {
     private String phone;
     private String address;
 
-    public Order(){
+    public Order() {
     }
 
     public Order(Integer id, List<PizzaOrdering> pizzaOrder, Date date, String phone, String address) {
@@ -26,12 +28,14 @@ public class Order {
         this.id = id;
         this.pizzaOrder = pizzaOrder;
     }
+
     public Order(List<PizzaOrdering> pizzaOrder, Date date, String phone, String address) {
         this.date = date;
         this.phone = phone;
         this.address = address;
         this.pizzaOrder = pizzaOrder;
     }
+
     public Order(List<PizzaOrdering> pizzaOrder, String phone, String address) {
         this.phone = phone;
         this.address = address;
@@ -39,23 +43,23 @@ public class Order {
         this.date = getCurrentDate();
     }
 
-    public Date getCurrentDate(){
+    @JsonProperty(value = "current-date", access = JsonProperty.Access.READ_ONLY)
+    public Date getCurrentDate() {
         //calculates currrent time but in String
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
-        System.out.println(dtf.format(now));
+        String stringDate = dtf.format(now);
 
         //converts String to Date
-        String sDate1=dtf.format(now);
-        Date date1= null;
+        Date date1 = null;
         try {
-            date1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse(sDate1);
-            dtf.parse(sDate1);
+            date1 = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").parse(stringDate);
+            dtf.parse(stringDate);
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
-        System.out.println(sDate1+"\t"+date1);
+        System.out.println(stringDate + "\t" + date1);
         return date1;
     }
 
@@ -101,14 +105,15 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +"\n"+
-                "id=" + id +"\n"+
-                "pizzaOrder=" + pizzaOrder +"\n"+
-                "date=" + date +"\n"+
-                "phone='" + phone + "\n"+
-                "address='" + address + "\n"+
+        return "Order{" + "\n" +
+                "id=" + id + "\n" +
+                "pizzaOrder=" + pizzaOrder + "\n" +
+                "date=" + date + "\n" +
+                "phone='" + phone + "\n" +
+                "address='" + address + "\n" +
                 '}';
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {

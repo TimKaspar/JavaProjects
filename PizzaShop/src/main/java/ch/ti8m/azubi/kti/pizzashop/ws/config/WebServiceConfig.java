@@ -7,5 +7,5 @@ import javax.ws.rs.core.Application;
  * Web service configuration (root path for web services)
  */
 @ApplicationPath("/api")
-public class WebServiceConfig extends Application{
+public class WebServiceConfig extends Application {
 }

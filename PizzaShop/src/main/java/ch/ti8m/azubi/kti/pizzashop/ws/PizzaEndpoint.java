@@ -27,10 +27,7 @@ public class PizzaEndpoint {
     @POST
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.APPLICATION_JSON)
-    public Pizza createPizza(@FormParam("name") String text, @FormParam("price") Double price) throws Exception {
-        Pizza pizza = new Pizza();
-        pizza.setName(text);
-        pizza.setPrice(price);
+    public Pizza createPizza(Pizza pizza) throws Exception {
         return pizzaService().create(pizza);
     }
 

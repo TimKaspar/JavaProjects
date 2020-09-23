@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-16T11:47:29" hostname="TIM-N493" time="0.779">
+<testsuite name="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-23T13:22:51" hostname="TIM-N493" time="1.945">
   <properties/>
-  <testcase name="testGet" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.501"/>
-  <testcase name="testGetNotFound" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.018"/>
-  <testcase name="testList" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.025"/>
-  <testcase name="testGetPizzaOrdering" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.183"/>
-  <testcase name="testCreate" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.014"/>
-  <testcase name="testDelete" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.015"/>
-  <testcase name="testUpdate" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.021"/>
-  <system-out><![CDATA[2020/09/16 13:47:29
-2020/09/16 13:47:29	Wed Sep 16 13:47:29 CEST 2020
-2020/09/16 13:47:29
-2020/09/16 13:47:29	Wed Sep 16 13:47:29 CEST 2020
-2020/09/16 13:47:29
-2020/09/16 13:47:29	Wed Sep 16 13:47:29 CEST 2020
-2020/09/16 13:47:29
-2020/09/16 13:47:29	Wed Sep 16 13:47:29 CEST 2020
-2020/09/16 13:47:30
-2020/09/16 13:47:30	Wed Sep 16 13:47:30 CEST 2020
-2020/09/16 13:47:30
-2020/09/16 13:47:30	Wed Sep 16 13:47:30 CEST 2020
-2020/09/16 13:47:30
-2020/09/16 13:47:30	Wed Sep 16 13:47:30 CEST 2020
+  <testcase name="testGet" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="1.277"/>
+  <testcase name="testGetNotFound" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.027"/>
+  <testcase name="testList" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.058"/>
+  <testcase name="testGetPizzaOrdering" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.472"/>
+  <testcase name="testCreate" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.029"/>
+  <testcase name="testDelete" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.031"/>
+  <testcase name="testUpdate" classname="ch.ti8m.azubi.kti.pizzashop.OrderDAOTest" time="0.047"/>
+  <system-out><![CDATA[2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
+2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
+2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
+2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
+2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
+2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
+2020/09/23 15:22:53	Wed Sep 23 15:22:53 CEST 2020
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

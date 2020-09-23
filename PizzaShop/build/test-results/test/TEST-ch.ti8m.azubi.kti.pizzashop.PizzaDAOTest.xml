@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-07-24T06:25:41" hostname="TIM-N493" time="0.039">
+<testsuite name="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-09-23T13:22:53" hostname="TIM-N493" time="0.206">
   <properties/>
-  <testcase name="testGet" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.006"/>
-  <testcase name="testGetNotFound" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.006"/>
-  <testcase name="testList" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.005"/>
-  <testcase name="testSave" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.006"/>
-  <testcase name="testCreate" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.005"/>
-  <testcase name="testDelete" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.005"/>
-  <testcase name="testUpdate" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.005"/>
+  <testcase name="testGet" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.019"/>
+  <testcase name="testGetNotFound" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.02"/>
+  <testcase name="testList" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.048"/>
+  <testcase name="testSave" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.027"/>
+  <testcase name="testCreate" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.028"/>
+  <testcase name="testDelete" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.028"/>
+  <testcase name="testUpdate" classname="ch.ti8m.azubi.kti.pizzashop.PizzaDAOTest" time="0.034"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

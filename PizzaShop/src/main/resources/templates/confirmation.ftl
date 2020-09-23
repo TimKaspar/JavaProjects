@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Confirmation</title>
     <link rel="stylesheet" type="text/css" href="confirmation.css">
-    <script src="Confirmation.js"></script>
 </head>
 <body>
 <#--Titel-->

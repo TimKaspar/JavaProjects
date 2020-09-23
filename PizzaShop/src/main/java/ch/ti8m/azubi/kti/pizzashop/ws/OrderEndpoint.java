@@ -28,12 +28,7 @@ public class OrderEndpoint {
     @POST
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.APPLICATION_JSON)
-    public Order createOrder(List<PizzaOrdering> pizzaOrder, String phone, String address) throws Exception {
-        Order order = new Order();
-        order.setPizzaOrder(pizzaOrder);
-        order.setDate(order.getCurrentDate());
-        order.setPhone(phone);
-        order.setAddress(address);
+    public Order createOrder(Order order) throws Exception {
         return orderService().create(order);
     }
 

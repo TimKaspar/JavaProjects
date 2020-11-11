@@ -1,0 +1,16 @@
+127.0.0.1 - - [01/Oct/2020:08:29:03 +0200] "GET /cargocpc/index.html HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:10 +0200] "GET /pizzashop/pizza? HTTP/1.1" 200 4557
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:10 +0200] "GET /pizzashop/Pizza.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:10 +0200] "GET /pizzashop/Pizza.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:10 +0200] "GET /favicon.ico HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/pizza? HTTP/1.1" 200 4557
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Pizza.css HTTP/1.1" 200 5348
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Pizza.js HTTP/1.1" 200 527
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Background.jpg HTTP/1.1" 200 3911227
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Prosciutto.jpg HTTP/1.1" 200 1054321
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Margherita.jpg HTTP/1.1" 200 441099
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Tonno.jpg HTTP/1.1" 200 131703
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Hawaii.jpg HTTP/1.1" 200 2970806
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Prosciutto%20et%20Funghi.jpg HTTP/1.1" 200 1262900
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /pizzashop/Img/Salami.jpg HTTP/1.1" 200 151830
+0:0:0:0:0:0:0:1 - - [01/Oct/2020:08:29:13 +0200] "GET /favicon.ico HTTP/1.1" 404 682
